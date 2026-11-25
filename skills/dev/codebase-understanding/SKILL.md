@@ -13,44 +13,60 @@ Prioritize architectural understanding and critical execution paths over exhaust
 
 ## Workflow
 
-### 1. Establish the Big Picture
+### 1. What - Establish the Big Picture
 
 - Identify the project's purpose and main functionality.
 - Inspect the repository structure, documentation, and entry points.
-- Identify major modules and their responsibilities.
+- Identify core components, their responsibilities and their architectural relationships.
 - Distinguish documented architecture from actual implementation.
 
-### 2. Trace Critical Execution Paths
+### 2. How - Trace Critical Execution Paths
 
-- Identify the main execution workflow from entry point to result.
+- Identify the main execution workflow from entry point to result, including critical failure and recovery paths.
 - Trace important function calls and data transformations.
 - Explain how core components interact.
 - Identify important state transitions and external dependencies.
 
-### 3. Understand Core Design
+### 3. Why - Understand Core Design
 
 - Identify important abstractions, interfaces, and data structures.
-- Explain architectural boundaries and dependencies.
+- Explain how core design choices support the architecture, execution flows, and project objectives.
 - Distinguish design intent supported by evidence from inferred rationale.
 - Highlight important trade-offs when they can be established from the code.
 
 ### 4. Verify Understanding
 
-- Support important findings with actual file paths, classes, and functions.
-- Inspect relevant implementations rather than relying solely on documentation.
-- Distinguish confirmed facts, reasonable inferences, and unresolved questions.
-- Do not invent missing components or unsupported behavior.
+- Precise references - Support each substantive finding with precise source references (file paths and relevant line numbers).
+- Evidence validation - Inspect the cited code and its necessary context to ensure it supports the claim, rather than merely pointing to a related symbol.
+- Implementation first - Inspect relevant implementations rather than relying solely on documentation.
+- Facts vs. inferences - Distinguish confirmed facts, reasonable inferences, and unresolved questions.
+- No fabrication - Do not invent missing components or unsupported behavior.
 
 ## Output
 
-Provide a concise, structured report covering:
+Present findings progressively, from the overall picture to essential implementation details.
 
-1. Project overview
-2. Architecture and major components
-3. Main execution paths and data flow
-4. Core abstractions and design decisions
-5. Key files and functions for further study
-6. Uncertainties and recommended next steps
+### 1. Overall Understanding
+
+- Summarize the project's objectives and overall solution.
+- Illustrate the system architecture and core component relationships using a concise text diagram.
+- Illustrate the main execution flows and data flow using concise text diagrams where helpful.
+
+### 2. Core Components
+
+For each core component:
+- Explain its responsibilities and role in the overall architecture.
+- Identify key classes, functions, interfaces, and their precise source locations.
+- Explain how its core design and implementation support the overall solution.
+- Highlight meaningful limitations, confirmed issues, and unresolved questions when relevant.
+
+### 3. Verification
+
+- Summarize the overall verification status.
+- List unresolved questions, unsupported claims, and important uncertainties with relevant source references.
+- Avoid repeating successfully verified findings already supported by evidence in the report.
+
+Keep the report concise, structured, evidence-based, and free of unnecessary repetition.
 
 ## Constraints
 
