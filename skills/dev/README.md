@@ -36,6 +36,14 @@ Each stage builds on the verified context and outputs of previous stages.
 
 Findings from later stages may require revisiting and refining earlier understanding, requirements, or designs.
 
+## I/O Conventions
+
+- Store development artifacts under `.reports/` in the target codebase.
+- Organize artifacts by skill or development stage.
+- Use timestamp-based filenames to preserve individual runs.
+- Default to the latest artifact when no specific version is provided.
+- Pass artifact file paths explicitly between skills.
+
 ## Skills
 
 - **`codebase-understanding`** — Understand existing architectures, core components, execution paths, and design decisions.

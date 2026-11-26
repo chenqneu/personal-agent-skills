@@ -68,10 +68,17 @@ For each core component:
 
 Keep the report concise, structured, evidence-based, and free of unnecessary repetition.
 
+## Persistence
+
+- Present the report in the conversation.
+- Save the same report under `.reports/codebase-understanding/` in the target repository.
+- Name files `<session-id>_<timestamp>.md`, using the current agent session ID and `YYYYMMDD-HHMMSS`.
+- If file writing is unavailable, explicitly report that the file was not saved.
+
 ## Constraints
 
 - Read-only analysis by default.
-- Do not modify files, install dependencies, or execute the application unless explicitly requested.
+- Do not modify source files, install dependencies, or execute the application unless explicitly requested.
 - Avoid unrelated refactoring suggestions.
 - Do not exhaustively inspect every file unless necessary.
 - Prefer accurate, evidence-based conclusions over lengthy descriptions.
